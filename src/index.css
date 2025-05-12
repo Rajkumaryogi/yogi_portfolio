@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #0b011c;
+}
+.all-btn {
+  padding: 11px 1.5rem;
+  background-color: #06d6a0;
+  color: white;
+  border-radius: 30px;
+  transform: scale(1);
+}
+
+.all-btn-outline {
+  padding: 11px 1.5rem;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.all-btn-outline::before,
+.all-btn-outline::after {
+  content: "";
+  position: absolute;
+  border: 8px solid #06d6a0;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth animation */
+  pointer-events: none; /* Ensures pseudo-elements don't interfere */
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.all-btn-outline::before {
+  top: -0.28rem;
+  left: -0.26rem;
+  bottom: auto;
+  right: auto;
+  width: 0%; /* Start with 0 width */
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.all-btn-outline::after {
+  bottom: -0.28rem;
+  right: -0.26rem;
+  top: auto;
+  left: auto;
+  width: 0%; /* Start with 0 width */
+}
+
+/* Hover Effect */
+.all-btn-outline:hover::before {
+  transition: all 0.3s ease; /* Smooth animation */
+  top: auto !important;
+  bottom: -0.28rem;
+}
+.all-btn-outline:hover::after {
+  transition: all 0.3s ease; /* Smooth animation */
+  bottom: auto !important;
+  top: -0.28rem;
+}
+
+.all-btn-outline:hover {
+  background-color: #f0f0f0; /* Slight hover effect for button */
+}
+
+.all-btn:hover {
+  background-color: #0d9488;
+  transform: scale(1.05);
+}

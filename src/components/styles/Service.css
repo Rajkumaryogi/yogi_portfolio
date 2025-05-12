@@ -1,0 +1,39 @@
+@keyframes bounceHover {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.service-bounce:hover {
+  animation: bounceHover 0.4s;
+}
+.service-bounce>img{
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+.service-bounce:hover>img{
+  transform: scale(1.25);
+}
+/* .service-bounce > p {
+  display: none;
+  opacity: 0 !important;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+.service-bounce:hover > p {
+  display: initial;
+  opacity: 1 !important;
+} */

@@ -30,7 +30,7 @@ function AboutPage() {
           </p>
           <div className="flex justify-center items-center sm:inline">
             <a
-              href="https://drive.google.com/file/d/1nj2PGzdATWy57ENjRSebpX2_wCFI11i9/view?usp=sharing"
+              href="https://docs.google.com/document/d/1y89-dms9A_yrdGTGdYxlhec5QoLTcgZS5zvrDhIDQ9s/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className=""

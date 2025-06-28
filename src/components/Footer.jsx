@@ -21,9 +21,10 @@ function Footer() {
               <span className="text-blue-500 font-medium">Email:</span>{" "}
               <a
                 href="mailto:rajkumar6777y@gmail.com"
-                className="underline text-xl cursor-pointer"
+                className="text-xl cursor-pointer"
               >
-                rajkumar6777y@gmail.com
+                rajkum51_soe@jnu.ac.in
+                rajkumar6777y@gmail.com 
               </a>
             </p>
             <p className="sm:text-start text-center text-xl">

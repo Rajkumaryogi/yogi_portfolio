@@ -98,9 +98,9 @@ function SkillPanel() {
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-16 pb-36 bg-white">
         {/* top text  */}
         <div className="text-center">
-          <h1 className="font-bold text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
             Tech Stack
-          </h1>
+          </h2>
           <p className="text-textBlackColor pt-2">
             These are my skills on the basis of which I have made projects.
           </p>

@@ -27,9 +27,9 @@ function Faq() {
 
   return (
     <div className="bg-white px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32 lg:py-40">
-      <h1 className="font-bold text-textBlackColor text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center">
+      <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
         FAQ
-      </h1>
+      </h2>
       <p className="text-center text-textBlackColor pt-2 text-sm sm:text-base">
         Explore my portfolio, learn about my skills, and get answers to
         frequently asked questions about my work, collaborations, and more

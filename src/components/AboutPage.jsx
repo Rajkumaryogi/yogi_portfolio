@@ -15,7 +15,7 @@ function AboutPage() {
         </div>
         {/* right  */}
         <div className="w-full lg:w-[60%]">
-          <h1 className="font-bold text-textBlackColor text-4xl sm:text-5xl md:text-6xl text-center sm:text-start">
+          <h1 className="font-bold text-black text-2xl md:text-5xl text-center sm:text-start">
             About me
           </h1>
 

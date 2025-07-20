@@ -76,9 +76,9 @@ function Service() {
 
   return (
     <div className="bg-white flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-[150px] pt-24 pb-16">
-      <h1 className="font-bold text-black text-4xl md:text-6xl text-center">
+      <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
         Services I Offer
-      </h1>
+      </h2>
       <p className="text-center text-textBlackColor mt-4 max-w-3xl">
         I help businesses and individuals bring their ideas to life with
         professional, custom-built web solutions tailored to meet your goals.

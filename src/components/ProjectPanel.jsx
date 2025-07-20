@@ -11,11 +11,29 @@ function ProjectPanel() {
       image: "/dif_team.png",
     },
     {
-      title: "Admin Panel",
+      title: "DIF-Admin Panel",
       description:
         "I developed the Admin Panel for Dharti International Foundation,all data coming and updation from the database for fast, secure, and community-driven , showcasing its features, roadmap, and seamless wallet integration.",
       live: "https://dif-web-mu.vercel.app/admin/login",
       image: "/dif_admin.png",
+    },
+    {
+      title: "E-commerce Website",
+      description: "I developed the E-commerce designed and developed Including Admin Panel for product add, update, delete (Backend on Railway and Frontend on vercel) in 5 days bootcamp by Think Academies, a fast, secure, and community",
+      live: "https://rajchlothzy.vercel.app/",
+      image: "/ecommerce.png",
+    },
+    {
+      title: "E-commerce-Admin Panel",
+      description: "I developed the E-commerce designed and developed Including Admin Panel for product add, update, delete (Backend on Railway and Frontend on vercel) in 5 days bootcamp by Think Academies, a fast, secure, and community",
+      live: "https://rajchlothzy.vercel.app/admin",
+      image: "/ecommerceAdmin.png",
+    },
+    {
+      title: "Real-Time Leaderboard Application",
+      description:"Select one of the users, claim random points for that selected user, and dynamically display user rankings based on total points. The backend(Railway)- NodeJS completely, and the frontend(vercel)- ReactJS (Basic Ui).",
+      live: "https://real-time-leaderboard-app.vercel.app",
+      image: "/leaderboard.png",
     },
     {
       title: "University Website",
@@ -35,9 +53,9 @@ function ProjectPanel() {
 
   return (
     <div className="flex flex-col items-center px-4 sm:px-12 md:px-24 lg:px-32 bg-white py-16">
-      <h1 className="font-bold text-black text-4xl sm:text-5xl md:text-6xl text-center">
+      <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
         My Projects
-      </h1>
+      </h2>
       <p className="text-center text-textBlackColor pt-2 px-2 text-sm sm:text-base mt-2">
         This collection showcases projects highlighting skills and expertise
         applied in real-world scenarios.
@@ -81,7 +99,7 @@ const ProjectCard = ({ project }) => {
               loading="lazy"
               src={WebsiteIcom}
               alt="Website"
-              className="w-12 h-12"
+              className="w-8 h-8"
             />
           </a>
         </div>

@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import GithubIcon from "../assets/github.svg";
 import InstaIcon from "../assets/instagram.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import XIcon from "../assets/x.svg";
 
 function Footer() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically send the form data to your backend
+    // For now, we'll just show the success message
+    setIsSubmitted(true);
+    
+    // Reset the form
+    e.target.reset();
+    
+    // Hide the message after 3 seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 3000);
+  };
+
   return (
     <div className="bg-white text-textBlackColor w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -95,12 +112,13 @@ function Footer() {
             <h2 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 text-center lg:text-left">
               Send Message
             </h2>
-            <form className="space-y-3 sm:space-y-4">
+            <form className="space-y-3 sm:space-y-4" onSubmit={handleSubmit}>
               {/* Full Name */}
               <input
                 type="text"
                 placeholder="Enter Full Name"
                 className="w-full p-2 sm:p-3 bg-black rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base"
+                required
               />
 
               {/* Email */}
@@ -108,6 +126,7 @@ function Footer() {
                 type="email"
                 placeholder="Enter Email"
                 className="w-full p-2 sm:p-3 bg-black rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base"
+                required
               />
 
               {/* Message */}
@@ -115,6 +134,7 @@ function Footer() {
                 placeholder="Type Your Message..."
                 rows="4"
                 className="w-full p-2 sm:p-3 bg-black rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base"
+                required
               ></textarea>
 
               {/* Submit Button */}
@@ -124,6 +144,13 @@ function Footer() {
               >
                 Send
               </button>
+              
+              {/* Success Message */}
+              {isSubmitted && (
+                <div className="text-green-500 text-center animate-fadeIn">
+                  Message sent!
+                </div>
+              )}
             </form>
           </div>
         </div>

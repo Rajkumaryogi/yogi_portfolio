@@ -11,7 +11,7 @@ function Faq() {
     {
       id: 1,
       que: "How can I contact you?",
-      ans: "You can reach me through the contact form on this website or via email at rajkumar6777y@gmail.com",
+      ans: "You can reach me through the contact form on this website or via email at work.yogirajkumar@gmail.com, rajkumar6777y@gmail.com and rajkum51_soe@jnu.ac.in",
     },
     {
       id: 2,

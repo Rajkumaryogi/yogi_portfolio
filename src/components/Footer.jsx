@@ -27,14 +27,21 @@ function Footer() {
                   href="mailto:rajkumar6777y@gmail.com"
                   className="text-base sm:text-lg cursor-pointer hover:underline"
                 >
-                  rajkum51_soe@jnu.ac.in
+                  work.yogirajkumar@gmail.com
+                </a>
+                 <br />
+                <a
+                  href="mailto:rajkumar6777y@gmail.com"
+                  className="text-base sm:text-lg cursor-pointer hover:underline"
+                >
+                  rajkumar6777y@gmail.com
                 </a>
                 <br />
                 <a
                   href="mailto:rajkumar6777y@gmail.com"
                   className="text-base sm:text-lg cursor-pointer hover:underline"
                 >
-                  rajkumar6777y@gmail.com
+                  rajkum51_soe@jnu.ac.in
                 </a>
               </p>
               <p className="text-center lg:text-left text-base sm:text-lg">

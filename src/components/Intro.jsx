@@ -24,17 +24,19 @@ function Intro() {
         </h1>
         
         <div className="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left h-auto min-h-[3rem]">
-          I'm{" "}
+          I'm {" "}
           <span className="text-blue-600">
             <TypeAnimation
               sequence={[
-                "Full Stack Developer",
+                "a Full Stack Developer",
                 1000,
-                "Web Developer",
+                "a Web Developer",
                 1000,
-                "UI/UX Designer",
+                "an UI/UX Designer",
                 1000,
-                "React Specialist",
+                "a Backend Developer",
+                1000,
+                "a React Specialist",
                 1000,
               ]}
               wrapper="span"

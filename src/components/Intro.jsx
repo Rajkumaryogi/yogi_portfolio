@@ -24,7 +24,7 @@ function Intro() {
         </h1>
         
         <div className="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left h-auto min-h-[3rem]">
-          I am a{" "}
+          I'm{" "}
           <span className="text-blue-600">
             <TypeAnimation
               sequence={[

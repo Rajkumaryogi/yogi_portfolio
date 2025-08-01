@@ -62,7 +62,7 @@ function ProjectPanel() {
     },
     {
       title: "Login Auth System",
-      description: "Secure role-based authentication with admin privileges and user management.",
+      description: "Secure authentication with privileges with product and user profile management.",
       live: "https://login-auth-orpin.vercel.app/",
       image: "/login_auth.png",
       tags: ["Nodejs", "React", "JWT", "Expressjs"]

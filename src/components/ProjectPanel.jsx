@@ -20,7 +20,7 @@ function ProjectPanel() {
     },
     {
       title: "BAJDOLIYA WORKSHOP",
-      description: "A Car Service platform where user can add and book service for their car and get updates accordingly",
+      description: "Currently working on a Car Service platform where user can add and book service for their car and get updates accordingly",
       live: "https://bajdoliyaworkshop.vercel.app/",
       image: "/workshop.png",
       tags: ["Nodejs", "Reactjs", "TailwindCss", "JWT"]

@@ -37,30 +37,27 @@ function AboutPage() {
           className="w-full lg:w-1/2"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center lg:text-left">
-            About <span className="text-blue-600">Me</span>
-          </h1>
+  About <span className="text-blue-600">Me</span>
+</h1>
 
-          <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-            <p>
-              I am a Computer Science Engineering graduate and 
-              have a passion for building innovative digital solutions. 
-              My journey in technology is driven by curiosity and a constant desire to learn and grow.
-            </p>
-            
-            <p>
-              Currently specializing in <span className="font-semibold text-blue-600">Web Development</span>, 
-              I combine technical skills with creative problem-solving to build 
-              applications that make an impact. As a competitive programmer, I thrive 
-              on challenges that push my abilities to new heights.
-            </p>
-            
-            <p>
-              I'm deeply committed to the <span className="font-semibold text-blue-600">open-source community</span> 
-              and actively seek collaborations that can benefit developers worldwide. 
-              Every line of code I write is an opportunity to learn and contribute 
-              to something meaningful.
-            </p>
-          </div>
+<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+  <p>
+    I’m a Computer Science Engineering graduate with a strong passion for turning ideas into impactful digital experiences. 
+    My journey in tech is fueled by curiosity, creativity, and a commitment to continuous learning.
+  </p>
+
+  <p>
+    I currently specialize in <span className="font-semibold text-blue-600">Web Development</span>, 
+    blending clean, efficient code with thoughtful design to build responsive, scalable applications. 
+    As a competitive programmer, I thrive on solving complex problems and optimizing performance.
+  </p>
+
+  <p>
+    I'm an active contributor to the <span className="font-semibold text-blue-600">open-source community</span> 
+    and always open to meaningful collaborations that empower developers and users alike. 
+    For me, every project is not just about writing code—it's about building something that matters.
+  </p>
+</div>
 
           <motion.div 
             whileHover={{ scale: 1.05 }}

@@ -48,10 +48,10 @@ function Intro() {
         </div>
 
         <p className="text-gray-600 text-lg md:text-xl text-center lg:text-left max-w-2xl leading-relaxed">
-          <span className="font-bold text-blue-600">Hello!</span> I craft stunning, 
-          high-performance websites that don't just look beautiful but deliver real results. 
-          No templates—just custom, responsive designs that elevate your brand and 
-          outperform the competition.
+          <span className="font-bold text-blue-600">Hello!</span>I design and develop, 
+          high-performance, visually striking websites that don’t just look great—they drive real results. 
+          Every project is custom-built (no templates), fully responsive, and 
+          strategically crafted to elevate your brand and outperform the competition.
         </p>
 
         {/* Buttons */}

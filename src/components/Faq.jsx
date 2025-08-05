@@ -26,34 +26,61 @@ function Faq() {
   ];
 
   return (
-    <div className="bg-white px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32 lg:py-40">
+    <div className="px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32 lg:py-40">
       <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
         FAQ
       </h2>
-      <p className="text-center text-textBlackColor pt-2 text-sm sm:text-base">
-        Explore my portfolio, learn about my skills, and get answers to
-        frequently asked questions about my work, collaborations, and more
-      </p>
 
       <div className="mt-16 space-y-4">
         {faq.map((item, index) => (
-          <div
-            key={item.id}
-            className="border-[1px] border-black rounded-xl"
-          >
-            <h2>
-              <button
-                className={`w-full text-left px-4 py-4 text-lg sm:text-xl text-textBlackColor font-semibold ${
-                  activeIndex === index ? "rounded-t-lg" : "rounded-lg"
-                }`}
-                onClick={() => toggleAccordion(index)}
-              >
-                {item.que}
-              </button>
-            </h2>
+          <div key={item.id} className="border border-black rounded-xl">
+            <button
+              className="flex justify-between items-center w-full px-4 py-4 text-left text-lg sm:text-xl text-black font-semibold"
+              onClick={() => toggleAccordion(index)}
+            >
+              {item.que}
+
+              {/* Icon */}
+              <span className="ml-4">
+                {activeIndex === index ? (
+                  // Up arrow (when open)
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 15l7-7 7 7"
+                    />
+                  </svg>
+                ) : (
+                  // Down arrow (when closed)
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                )}
+              </span>
+            </button>
+
+            {/* Answer section */}
             {activeIndex === index && (
-              <div className="px-4 py-4 text-base sm:text-lg text-textBlackColor">
-                {" "}
+              <div className="px-4 pb-4 text-base sm:text-lg text-gray-700">
                 • {item.ans}
               </div>
             )}

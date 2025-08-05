@@ -6,8 +6,8 @@ function ProjectPanel() {
   const Projects = [
     {
       title: "Dharti International",
-      description: "A platform connecting people through nature with activity exploration and community engagement features.",
-      live: "https://dif-web-mu.vercel.app/",
+      description: "A dynamic platform that fosters community engagement and environmental awareness by enabling users to explore nature-based activities, connect with like-minded individuals, and participate in eco-friendly initiatives.",
+      live: "https://dif-web-mu.vercel.app",
       image: "/dif_team.png",
       tags: ["Node.js", "MongoDB", "EJS", "BootstrapCss"]
     },
@@ -21,7 +21,7 @@ function ProjectPanel() {
     {
       title: "BAJDOLIYA WORKSHOP",
       description: "Currently working on a Car Service platform where user can add and book service for their car and get updates accordingly",
-      live: "https://bajdoliyaworkshop.vercel.app/",
+      live: "https://bajdoliyaworkshop.vercel.app",
       image: "/workshop.png",
       tags: ["Nodejs", "Reactjs", "TailwindCss", "JWT"]
     },
@@ -35,7 +35,7 @@ function ProjectPanel() {
     {
       title: "E-commerce Website",
       description: "Full-featured online store with product management and secure checkout.",
-      live: "https://rajchlothzy.vercel.app/",
+      live: "https://rajchlothzy.vercel.app",
       image: "/ecommerce.png",
       tags: ["Nodejs", "Reactjs", "MongoDB", "Railway"]
     },
@@ -56,14 +56,14 @@ function ProjectPanel() {
     {
       title: "University Website",
       description: "Informational portal for School of Engineering with program details and faculty information.",
-      live: "https://soe-jnu.vercel.app/",
+      live: "https://soe-jnu.vercel.app",
       image: "/soe-jnu.png",
       tags: ["Reactjs", "Tailwind", "Vercel"]
     },
     {
       title: "Login Auth System",
       description: "Secure authentication with privileges with product and user profile management.",
-      live: "https://login-auth-orpin.vercel.app/",
+      live: "https://login-auth-orpin.vercel.app",
       image: "/login_auth.png",
       tags: ["Nodejs", "React", "JWT", "Expressjs"]
     },

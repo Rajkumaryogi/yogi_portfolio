@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaPaperPlane, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaPaperPlane, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -294,6 +294,7 @@ const Footer = () => {
                 <h4 className="font-medium text-gray-900 mb-4">Connect With Me</h4>
                 <div className="flex space-x-4">
                   {[
+                    { icon: <FaWhatsapp />, color: "text-green-700", href: "https://wa.me/919785641782" },
                     { icon: <FaLinkedin />, color: "text-blue-700", href: "https://www.linkedin.com/in/rajkumaryogi-jnu/" },
                     { icon: <FaGithub />, color: "text-black-700", href: "https://github.com/Rajkumaryogi" },
                     { icon: <FaTwitter />, color: "text-blue-400", href: "https://x.com/rajkumar6777y" },

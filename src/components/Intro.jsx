@@ -8,9 +8,9 @@ function Intro() {
       {/* Animated background elements */}
       <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-blue-100 opacity-20 blur-xl"></div>
       <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-200 opacity-20 blur-xl"></div>
-      
+
       {/* Left Content */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -22,17 +22,17 @@ function Intro() {
             Rajkumar Yogi
           </span>
         </h1>
-        
+
         <div className="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left h-auto min-h-[3rem]">
-          I'm {" "}
+          I'm{" "}
           <span className="text-blue-600">
             <TypeAnimation
               sequence={[
-                "a Full Stack Developer",
+                "a Junior Software Engineer",
                 1000,
-                "a Web Developer",
+                "a MERN Stack Developer",
                 1000,
-                "an UI/UX Designer",
+                "a Problem Solver (DSA - Java)",
                 1000,
                 "a Backend Developer",
                 1000,
@@ -48,18 +48,20 @@ function Intro() {
         </div>
 
         <p className="text-gray-600 text-lg md:text-xl text-center lg:text-left max-w-2xl leading-relaxed">
-          <span className="font-bold text-blue-600">Hello!</span>I design and develop, 
-          high-performance, visually striking websites that don’t just look great—they drive real results. 
-          Every project is custom-built (no templates), fully responsive, and 
-          strategically crafted to elevate your brand and outperform the competition.
+          <span className="font-bold text-blue-600">Hello!</span> I’m a final-year{" "}
+          <strong>B.Tech CSE student at JNU</strong> with a passion for
+          building secure, scalable, and user-focused applications. Skilled in
+          <strong> Data Structures & Algorithms (Java)</strong>, MERN stack
+          development, AWS, Docker, deployment and full-cycle software engineering, I create solutions
+          that are efficient, reliable, and impactful.
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mt-4 w-full sm:w-auto">
-          <motion.a 
+          <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#contacts" 
+            href="#contacts"
             className="w-full sm:w-auto"
           >
             <button className="w-full px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
@@ -75,14 +77,14 @@ function Intro() {
             className="w-full sm:w-auto"
           >
             <button className="w-full px-8 py-3 bg-white border-2 border-blue-500 text-blue-600 rounded-xl hover:bg-blue-50 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
-              Download CV
+              Get My CV →
             </button>
           </motion.a>
         </div>
       </motion.div>
 
       {/* Right Image */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}

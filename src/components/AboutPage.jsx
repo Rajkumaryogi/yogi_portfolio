@@ -7,10 +7,10 @@ function AboutPage() {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-      
+
       <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left - Image */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -29,7 +29,7 @@ function AboutPage() {
         </motion.div>
 
         {/* Right - Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -37,29 +37,41 @@ function AboutPage() {
           className="w-full lg:w-1/2"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center lg:text-left">
-  About <span className="text-blue-600">Me</span>
-</h1>
+            About <span className="text-blue-600">Me</span>
+          </h1>
 
-<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-  <p>
-    I’m a Computer Science Engineering graduate with a strong passion for turning ideas into impactful digital experiences. 
-    My journey in tech is fueled by curiosity, creativity, and a commitment to continuous learning.
-  </p>
+          <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <p>
+              I’m <span className="font-semibold text-blue-600">Rajkumar Yogi</span>, a
+              Computer Science Engineering student (B.Tech, graduating 2025) with a strong
+              foundation in the <span className="font-semibold">MERN stack</span> and
+              <span className="font-semibold"> Data Structures & Algorithms in Java</span>.
+              I specialize in building high-performance, responsive web applications
+              that combine clean code with intuitive UI/UX design.
+            </p>
 
-  <p>
-    I currently specialize in <span className="font-semibold text-blue-600">Web Development</span>, 
-    blending clean, efficient code with thoughtful design to build responsive, scalable applications. 
-    As a competitive programmer, I thrive on solving complex problems and optimizing performance.
-  </p>
+            <p>
+              Beyond development, I have hands-on experience with{" "}
+              <span className="font-semibold text-blue-600">AWS cloud services</span> such
+              as EC2 for scalable hosting, S3 for object storage, EBS for block storage,
+              Lambda for serverless execution, RDS for relational databases, DynamoDB for
+              NoSQL, VPC for secure networking, CloudFront for content delivery, and Route
+              53 for DNS management. I also deploy applications on platforms like{" "}
+              <span className="font-semibold">Docker, Hostinger, Google Cloud, Railway, and Vercel</span>.
+            </p>
 
-  <p>
-    I'm an active contributor to the <span className="font-semibold text-blue-600">open-source community</span> 
-    and always open to meaningful collaborations that empower developers and users alike. 
-    For me, every project is not just about writing code—it's about building something that matters.
-  </p>
-</div>
+            <p>
+              My leadership as{" "}
+              <span className="font-semibold text-blue-600">
+                Battalion Havildar Major in NCC
+              </span>{" "}
+              has strengthened my ability to manage large teams and projects effectively.
+              I’m passionate about problem-solving, scalable architecture, and delivering
+              solutions that make a real impact.
+            </p>
+          </div>
 
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-10 flex justify-center lg:justify-start"
@@ -70,7 +82,7 @@ function AboutPage() {
               rel="noreferrer"
               className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-medium"
             >
-              Download My CV
+              Get My CV →
             </a>
           </motion.div>
         </motion.div>

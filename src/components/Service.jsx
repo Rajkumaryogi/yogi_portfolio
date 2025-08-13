@@ -1,75 +1,106 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import WebsiteLogo from "../assets/website.png";
-import Seo from "../assets/seo.png";
-import Api from "../assets/api.png";
-import Performance from "../assets/performance.png";
-import Maintainance from "../assets/maintainance.png";
-import AnimationLogo from "../assets/animation.png";
+
+// React Icons
+import { FaGlobe, FaPaintBrush, FaSearch, FaShoppingCart, FaServer, FaRocket, FaPlug, FaMagic, FaAws, FaHeadset, FaLaptopCode, FaDatabase, FaShieldAlt } from "react-icons/fa";
 
 function Service() {
   const Services = [
     {
       title: "Custom Websites",
       description: "Responsive, high-performance websites tailored to meet your goals.",
-      icon: WebsiteLogo,
+      icon: <FaGlobe className="w-16 h-16" />,
       color: "bg-gradient-to-br from-blue-500 to-blue-600",
       learnMoreLink: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
     },
     {
       title: "UI/UX Design",
       description: "Beautiful, user-friendly designs that leave a lasting impression.",
-      icon: "https://themewagon.github.io/satner/img/services/s2.png",
+      icon: <FaPaintBrush className="w-16 h-16" />,
       color: "bg-gradient-to-br from-purple-500 to-purple-600",
       learnMoreLink: "https://www.interaction-design.org/literature/topics/ui-design"
     },
     {
       title: "SEO Optimization",
       description: "Boost visibility and attract more traffic with expert SEO strategies.",
-      icon: Seo,
+      icon: <FaSearch className="w-16 h-16" />,
       color: "bg-gradient-to-br from-green-500 to-green-600",
       learnMoreLink: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
     },
     {
       title: "E-commerce Solutions",
       description: "Scalable online stores with secure payments and seamless experiences.",
-      icon: "https://themewagon.github.io/satner/img/services/s4.png",
+      icon: <FaShoppingCart className="w-16 h-16" />,
       color: "bg-gradient-to-br from-yellow-500 to-yellow-600",
       learnMoreLink: "https://www.shopify.com/blog/ecommerce-website-development"
     },
     {
       title: "Maintenance & Hosting",
       description: "Keep your site secure, fast, and always up-to-date.",
-      icon: Maintainance,
+      icon: <FaServer className="w-16 h-16" />,
       color: "bg-gradient-to-br from-red-500 to-red-600",
       learnMoreLink: "https://www.website.com/?source=SC&country=IN"
     },
     {
       title: "Performance Optimization",
       description: "Boost your website speed and performance for better user experience.",
-      icon: Performance,
+      icon: <FaRocket className="w-16 h-16" />,
       color: "bg-gradient-to-br from-indigo-500 to-indigo-600",
       learnMoreLink: "https://web.dev/learn/#performance"
     },
     {
       title: "API Integration",
       description: "Integrate or build APIs to extend your website's capabilities.",
-      icon: Api,
+      icon: <FaPlug className="w-16 h-16" />,
       color: "bg-gradient-to-br from-pink-500 to-pink-600",
       learnMoreLink: "https://developer.mozilla.org/en-US/docs/Web/API"
     },
     {
       title: "Web Animations",
       description: "Bring your website to life with captivating animations.",
-      icon: AnimationLogo,
+      icon: <FaMagic className="w-16 h-16" />,
       color: "bg-gradient-to-br from-teal-500 to-teal-600",
       learnMoreLink: "https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API"
     },
+    {
+      title: "AWS Cloud Services",
+      description: "Scalable, secure, and cost-efficient AWS cloud infrastructure setup and management.",
+      icon: <FaAws className="w-16 h-16" />,
+      color: "bg-gradient-to-br from-orange-500 to-orange-600",
+      learnMoreLink: "https://aws.amazon.com/what-is-aws/"
+    },
+    {
+      title: "IT Support & Services",
+      description: "Reliable IT support, troubleshooting, and infrastructure maintenance.",
+      icon: <FaHeadset className="w-16 h-16" />,
+      color: "bg-gradient-to-br from-cyan-500 to-cyan-600",
+      learnMoreLink: "https://en.wikipedia.org/wiki/IT_service_management"
+    },
+    {
+      title: "Software Solutions",
+      description: "Custom software applications tailored to your business needs.",
+      icon: <FaLaptopCode className="w-16 h-16" />,
+      color: "bg-gradient-to-br from-slate-500 to-slate-600",
+      learnMoreLink: "https://www.ibm.com/topics/software-development"
+    },
+    {
+      title: "Database Management",
+      description: "Efficient database design, optimization, and security management.",
+      icon: <FaDatabase className="w-16 h-16" />,
+      color: "bg-gradient-to-br from-lime-500 to-lime-600",
+      learnMoreLink: "https://www.oracle.com/database/what-is-database/"
+    },
+    {
+      title: "Cybersecurity Solutions",
+      description: "Protect your business from digital threats with advanced security measures.",
+      icon: <FaShieldAlt className="w-16 h-16" />,
+      color: "bg-gradient-to-br from-rose-500 to-rose-600",
+      learnMoreLink: "https://www.cisa.gov/cybersecurity"
+    }
   ];
 
   return (
     <section className="relative bg-white py-20 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32 overflow-hidden">
-      {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       
@@ -114,17 +145,11 @@ const ServiceCard = ({ service, index }) => {
       className={`${service.color} rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-white h-full`}
     >
       <div className="bg-white/20 p-4 rounded-full mb-6">
-        <img
-          loading="lazy"
-          src={service.icon}
-          alt={service.title}
-          className="w-16 h-16 object-contain"
-        />
+        {service.icon}
       </div>
       <h3 className="text-xl font-bold mb-3 text-center">{service.title}</h3>
       <p className="text-white/90 text-center">{service.description}</p>
       
-      {/* Learn more button with link */}
       <motion.a
         href={service.learnMoreLink}
         target="_blank"

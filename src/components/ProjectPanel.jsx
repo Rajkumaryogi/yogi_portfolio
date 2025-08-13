@@ -70,14 +70,6 @@ function ProjectPanel() {
     image: "/soe-jnu.png",
     tags: ["React.js", "Tailwind CSS", "Vercel"]
   },
-  {
-    title: "Login Auth System",
-    description:
-      "Secure authentication system with role-based access, profile management, and product administration features.",
-    live: "https://login-auth-orpin.vercel.app",
-    image: "/login_auth.png",
-    tags: ["Node.js", "React.js", "Express.js", "JWT"]
-  }
 ];
 
 
@@ -175,5 +167,6 @@ const ProjectCard = ({ project, darkMode }) => {
     </motion.div>
   );
 };
+
 
 export default ProjectPanel;

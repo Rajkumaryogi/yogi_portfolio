@@ -58,7 +58,7 @@ function ProjectPanel() {
     title: "Leaderboard App",
     description:
       "Real-time leaderboard application with dynamic point allocation, user tracking, and instant WebSocket updates.",
-    live: "https://real-time-leaderboard-app.vercel.app",
+    live: "https://leaderboard-app-ochre-omega.vercel.app",
     image: "/leaderboard.png",
     tags: ["React.js", "Node.js", "WebSockets"]
   },
@@ -170,3 +170,4 @@ const ProjectCard = ({ project, darkMode }) => {
 
 
 export default ProjectPanel;
+

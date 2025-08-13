@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useDarkMode } from "../context/DarkModeContext";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 function Faq() {
+  const { darkMode } = useDarkMode();
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -26,62 +29,42 @@ function Faq() {
   ];
 
   return (
-    <div className="px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32 lg:py-40">
-      <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
+    <div className={`px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32 lg:py-40 ${darkMode ? 'bg-gray-900' : 'bg-white'} transition-colors duration-300`}>
+      <h2 className={`font-bold ${darkMode ? 'text-gray-100' : 'text-black'} text-2xl md:text-5xl text-center`}>
         FAQ
       </h2>
 
       <div className="mt-16 space-y-4">
         {faq.map((item, index) => (
-          <div key={item.id} className="border border-black rounded-xl">
+          <div 
+            key={item.id} 
+            className={`border ${darkMode ? 'border-gray-700' : 'border-gray-300'} rounded-xl overflow-hidden transition-all duration-300`}
+          >
             <button
-              className="flex justify-between items-center w-full px-4 py-4 text-left text-lg sm:text-xl text-black font-semibold"
+              className={`flex justify-between items-center w-full px-4 py-4 text-left text-lg sm:text-xl font-semibold ${darkMode ? 'text-gray-100 hover:bg-gray-800' : 'text-gray-900 hover:bg-gray-50'} transition-colors duration-200`}
               onClick={() => toggleAccordion(index)}
+              aria-expanded={activeIndex === index}
+              aria-controls={`faq-${item.id}`}
             >
               {item.que}
 
               {/* Icon */}
               <span className="ml-4">
                 {activeIndex === index ? (
-                  // Up arrow (when open)
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 15l7-7 7 7"
-                    />
-                  </svg>
+                  <FaChevronUp className={`h-5 w-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
                 ) : (
-                  // Down arrow (when closed)
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  <FaChevronDown className={`h-5 w-5 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`} />
                 )}
               </span>
             </button>
 
             {/* Answer section */}
             {activeIndex === index && (
-              <div className="px-4 pb-4 text-base sm:text-lg text-gray-700">
-                • {item.ans}
+              <div 
+                id={`faq-${item.id}`}
+                className={`px-4 pb-4 text-base sm:text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'} border-t ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}
+              >
+                <div className="pt-2">• {item.ans}</div>
               </div>
             )}
           </div>

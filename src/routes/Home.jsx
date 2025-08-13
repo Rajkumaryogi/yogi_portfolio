@@ -14,7 +14,7 @@ function Home() {
   document.title = "Rajkumar_yogi_portfolio";
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div>
+      <div >
         <Navbar />
         <Intro />
         <Service />

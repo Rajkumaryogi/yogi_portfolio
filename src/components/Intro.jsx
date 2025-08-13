@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 
 function Intro() {
   return (
-    <div className="relative min-h-screen flex flex-col-reverse lg:flex-row justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-gradient-to-br from-white to-blue-50 w-full overflow-hidden py-6">
+    <div className="relative min-h-screen flex flex-col-reverse lg:flex-row justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 
+      bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-950 
+      w-full overflow-hidden py-6 transition-colors duration-300">
+      
       {/* Animated background elements */}
-      <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-blue-100 opacity-20 blur-xl"></div>
-      <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-200 opacity-20 blur-xl"></div>
+      <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-blue-100 dark:bg-blue-900 opacity-20 blur-xl"></div>
+      <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-200 dark:bg-blue-800 opacity-20 blur-xl"></div>
 
       {/* Left Content */}
       <motion.div
@@ -16,16 +19,16 @@ function Intro() {
         transition={{ duration: 0.8 }}
         className="z-20 flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 py-12 lg:py-0 space-y-6"
       >
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl text-gray-900 text-center lg:text-left leading-tight">
+        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl text-gray-900 dark:text-white text-center lg:text-left leading-tight">
           I'm{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-400 dark:to-blue-500">
             Rajkumar Yogi
           </span>
         </h1>
 
-        <div className="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left h-auto min-h-[3rem]">
+        <div className="text-gray-800 dark:text-gray-200 text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left h-auto min-h-[3rem]">
           I'm{" "}
-          <span className="text-blue-600">
+          <span className="text-blue-600 dark:text-blue-400">
             <TypeAnimation
               sequence={[
                 "a Junior Software Engineer",
@@ -47,8 +50,8 @@ function Intro() {
           </span>
         </div>
 
-        <p className="text-gray-600 text-lg md:text-xl text-center lg:text-left max-w-2xl leading-relaxed">
-          <span className="font-bold text-blue-600">Hello!</span> I’m a final-year{" "}
+        <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl text-center lg:text-left max-w-2xl leading-relaxed">
+          <span className="font-bold text-blue-600 dark:text-blue-400">Hello!</span> I’m a final-year{" "}
           <strong>B.Tech CSE student at JNU</strong> with a passion for
           building secure, scalable, and user-focused applications. Skilled in
           <strong> Data Structures & Algorithms (Java)</strong>, MERN stack
@@ -64,7 +67,9 @@ function Intro() {
             href="#contacts"
             className="w-full sm:w-auto"
           >
-            <button className="w-full px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
+            <button className="w-full px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 
+              text-white rounded-xl hover:from-blue-600 hover:to-blue-700 
+              transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
               Hire Me →
             </button>
           </motion.a>
@@ -76,7 +81,10 @@ function Intro() {
             rel="noreferrer"
             className="w-full sm:w-auto"
           >
-            <button className="w-full px-8 py-3 bg-white border-2 border-blue-500 text-blue-600 rounded-xl hover:bg-blue-50 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
+            <button className="w-full px-8 py-3 bg-white dark:bg-gray-800 
+              border-2 border-blue-500 text-blue-600 dark:text-blue-400 
+              rounded-xl hover:bg-blue-50 dark:hover:bg-gray-700 
+              transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
               Get My CV →
             </button>
           </motion.a>
@@ -95,9 +103,11 @@ function Intro() {
           <img
             src={MyImg}
             alt="Rajkumar Yogi"
-            className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] aspect-square object-cover rounded-full border-4 border-white shadow-2xl z-10 hover:scale-105 transition-transform duration-500"
+            className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] 
+              aspect-square object-cover rounded-full border-4 border-white dark:border-gray-800 
+              shadow-2xl z-10 hover:scale-105 transition-transform duration-500"
           />
-          <div className="absolute inset-0 rounded-full border-4 border-blue-300 opacity-30 pointer-events-none animate-spin-slow"></div>
+          <div className="absolute inset-0 rounded-full border-4 border-blue-300 dark:border-blue-700 opacity-30 pointer-events-none animate-spin-slow"></div>
         </div>
       </motion.div>
     </div>

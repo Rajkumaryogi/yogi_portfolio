@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 // React Icons
-import { FaGlobe, FaPaintBrush, FaSearch, FaShoppingCart, FaServer, FaRocket, FaPlug, FaMagic, FaAws, FaHeadset, FaLaptopCode, FaDatabase, FaShieldAlt } from "react-icons/fa";
+import { FaGlobe, FaPaintBrush, FaSearch, FaShoppingCart, FaServer, FaRocket, FaPlug, FaMagic, FaAws, FaHeadset, FaLaptopCode, FaDatabase } from "react-icons/fa";
 
 function Service() {
   const Services = [
@@ -89,13 +89,6 @@ function Service() {
       icon: <FaDatabase className="w-16 h-16" />,
       color: "bg-gradient-to-br from-lime-500 to-lime-600",
       learnMoreLink: "https://www.oracle.com/database/what-is-database/"
-    },
-    {
-      title: "Cybersecurity Solutions",
-      description: "Protect your business from digital threats with advanced security measures.",
-      icon: <FaShieldAlt className="w-16 h-16" />,
-      color: "bg-gradient-to-br from-rose-500 to-rose-600",
-      learnMoreLink: "https://www.cisa.gov/cybersecurity"
     }
   ];
 
@@ -142,7 +135,7 @@ const ServiceCard = ({ service, index }) => {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -10 }}
-      className={`${service.color} rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-white h-full`}
+      className={`${service.color} dark:bg-gray-700 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-white h-full`}
     >
       <div className="bg-white/20 p-4 rounded-full mb-6">
         {service.icon}

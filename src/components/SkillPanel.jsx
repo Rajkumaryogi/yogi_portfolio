@@ -17,7 +17,10 @@ import DockerIcon from "../assets/docker.svg";
 import figmaIcon from "../assets/figma.svg";
 import awsIcon from "../assets/aws-icon.svg";
 import ejsIcon from "../assets/ejs.jpeg";
+import { useDarkMode } from "../context/DarkModeContext";
+
 function SkillPanel() {
+  const { darkMode } = useDarkMode();
   const skills = [
     {
       name: "HTML",
@@ -59,7 +62,6 @@ function SkillPanel() {
       name: "Node Js",
       icon: nodeJsIcon,
     },
-
     {
       name: "Express",
       icon: expressIcon,
@@ -93,41 +95,41 @@ function SkillPanel() {
       icon: awsIcon,
     },
   ];
+
   return (
-    <>
-      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-16 pb-36 bg-white">
-        {/* top text  */}
-        <div className="text-center">
-          <h2 className="font-bold text-black text-2xl md:text-5xl text-center">
-            Tech Stack
-          </h2>
-          <p className="text-textBlackColor pt-2">
-            These are my skills on the basis of which I have made projects.
-          </p>
-        </div>
-        {/* skills  */}
-        <div className="mt-16">
-          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-12 md:gap-16">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center items-center gap-2 bg-gray-400 border-1px rounded cursor-pointer hover:bg-gray-500 transition-all duration-300"
-              >
-                <img
-                  loading="lazy"
-                  src={skill.icon}
-                  alt={skill.name}
-                  className="w-12 sm:w-20"
-                />
-                <p className="text-black font-bold text-sm sm:text-base text-center">
-                  {skill.name}
-                </p>
-              </div>
-            ))}
-          </div>
+    <div className={`w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-16 pb-36 ${darkMode ? 'bg-gray-900' : 'bg-white'} transition-colors duration-300`}>
+      {/* top text  */}
+      <div className="text-center">
+        <h2 className={`font-bold ${darkMode ? 'text-gray-100' : 'text-black'} text-2xl md:text-5xl text-center`}>
+          Tech Stack
+        </h2>
+        <p className={`${darkMode ? 'text-gray-300' : 'text-textBlackColor'} pt-2`}>
+          These are my skills on the basis of which I have made projects.
+        </p>
+      </div>
+      {/* skills  */}
+      <div className="mt-16">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-12 md:gap-16">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className={`flex flex-col justify-center items-center gap-2 ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'} rounded-lg p-4 cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg`}
+            >
+              <img
+                loading="lazy"
+                src={skill.icon}
+                alt={skill.name}
+                className="w-12 sm:w-20"
+                style={darkMode ? { filter: "invert(0.8)" } : {}}
+              />
+              <p className={`${darkMode ? 'text-gray-100' : 'text-black'} font-bold text-sm sm:text-base text-center`}>
+                {skill.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

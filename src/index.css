@@ -2,3 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add to index.css */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .bg-white {
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark .text-gray-900 {
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .text-gray-600 {
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dark .text-gray-700 {
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.dark .border-gray-300 {
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.dark .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}

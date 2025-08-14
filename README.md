@@ -1,1 +1,41 @@
-Yogi's Portfolio
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio website of Rajkumar Yogi, a B.Tech Computer Science and Engineering student. Showcasing projects, skills, and achievements in software development and technology." />
+    <meta name="author" content="Rajkumar Yogi" />
+    <meta name="keywords" content="Rajkumar Yogi, Portfolio, Web Developer, Software Engineer, Computer Science, React, JavaScript, Full Stack Development" />
+
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta property="og:title" content="Rajkumar Yogi - Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Rajkumar Yogi, a passionate Computer Science and Engineering student specializing in web development and software engineering." />
+    <meta property="og:image" content="%PUBLIC_URL%/preview-image.png" />
+    <meta property="og:url" content="https://rajkumar-yogi-portfolio.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rajkuamr Yogi - Portfolio" />
+    <meta name="twitter:description" content="Check out my portfolio showcasing projects, skills, and achievements in web development and software engineering." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/preview-image.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Rajkumar Yogi | Portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html> 

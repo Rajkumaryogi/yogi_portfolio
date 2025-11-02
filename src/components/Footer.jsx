@@ -147,7 +147,7 @@ const Footer = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-lg border ${errors.name ? "border-red-500" : darkMode ? "border-gray-700 bg-gray-700 text-gray-100" : "border-gray-300"} focus:ring-2 focus:ring-blue-500 focus:border-transparent transition`}
-                    placeholder="John Doe"
+                    placeholder="Rajkumar Yogi"
                   />
                   {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
                 </motion.div>
@@ -163,7 +163,7 @@ const Footer = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-lg border ${errors.email ? "border-red-500" : darkMode ? "border-gray-700 bg-gray-700 text-gray-100" : "border-gray-300"} focus:ring-2 focus:ring-blue-500 focus:border-transparent transition`}
-                    placeholder="john@example.com"
+                    placeholder="work.yogirajkumar@gmail.com"
                   />
                   {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                 </motion.div>
